@@ -98,8 +98,34 @@ CSS
 ```
 ファイル構成。
 ```
+基本関数と開発関数は分ける。
 fn.js
 app.js
 frame.css
 app.css
 ```
+文字判定
+```
+//test => match .pop
+//pop関数で一つだけ取得する。
+let str='xyz abc ddd'
+let re=/^xyz/
+let ret=re.test(str)?str.match(re).pop():void 0
+```
+二重読み込み
+```
+scriptの二重読み込みはdocument.body.datase内にフラグを立てる。
+if(document.body.dataset.mod1)return; //double load
+document.body.dataset.mod1=true;
+...
+```
+
+
+
+
+
+
+
+
+
+
