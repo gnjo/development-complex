@@ -55,7 +55,19 @@ throw new TypeErrorかreturn console.logを使う。
 htmlを文字列で出力し、そのhtmlに対してフラグメントを作成し、追加する。
 生成した要素に変更を加えたいだろうが、極力文字列で解決する。
 メタプログラミングの方がユーザ操作をブロッキングしないからである。
-let html='<div onclick="xyz(this)"></div>'
+let html='<div class="wrap"><div data-xyz="abc"></div></div>'
 let fr=fn.fr(html)
 fn.a2(fr,document.body)
 ```
+要素全体の追加
+```
+初回起動時には、全体のhtmlを生成しフラグメントへ書き込み、一度だけ描写した方が高速である。
+生成した要素を極力htmlで出力する理由でもある。
+この場合、要素一つの追加、要素全体の追加を考える必要がある。
+ほぼ同じ機能になるが、描画を一度だけにする事は重要である。
+app.draw();
+app.draw(allflg)
+```
+
+
+
