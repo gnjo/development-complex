@@ -119,7 +119,28 @@ if(document.body.dataset.mod1)return; //double load
 document.body.dataset.mod1=true;
 ...
 ```
+インターフェイス
+```
+単純な物。
+可能な限り引数を抑える。外に公開しない内部関数は適当で良い。
+let s=(x,y)=>{return x+y}
 
+複雑な物。
+option型かcall型を基本とする。
+let a=(tar,opt)=>{...}
+a('xyz',{x:0,y:1,z:1})
+;
+let b=(tar,caller)=>{ caller(tar) }
+b('xyz',(d)=>{...})
+
+通信。
+promise型とし、内部はasync awaitでネストを減らす。
+let z=(async (url)=>{
+ let data=await fetch(url).then(d=>d.text())
+ ...
+ return data
+})
+```
 
 
 
