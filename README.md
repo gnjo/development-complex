@@ -38,7 +38,7 @@ app.init();////////////////
 エラー表示
 ```
 throw new TypeErrorかreturn console.logを使う。
-前者推奨
+前者推奨。フェイルセーフを考えると必ずしも前者に統一する必要はない。
  throw new TypeError('xyz');
  return console.log('xyz');
 ```
