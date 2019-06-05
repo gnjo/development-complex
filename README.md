@@ -70,6 +70,15 @@ fn.a2(fr,document.body)
 app.draw();
 app.draw(allflg)
 ```
-
+背景色と文字色
+```
+背景色と文字色はコントラスト比で基準を設ける。
+16> rate 明る過ぎる。
+16 rate 明瞭
+7.0 rate 明瞭
+4.5 rate 判別できる。
+2.0 rate 暗く見える。
+2.0 < rate 見えない。 
+```
 
 
