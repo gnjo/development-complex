@@ -55,6 +55,8 @@ throw new TypeErrorかreturn console.logを使う。
 htmlを文字列で出力し、そのhtmlに対してフラグメントを作成し、追加する。
 生成した要素に変更を加えたいだろうが、極力文字列で解決する。
 メタプログラミングの方がユーザ操作をブロッキングしないからである。
+要素のオブザーバ関数がある為、積極的にdata-xxx情報を追加し、トリガーとする。
+内部データの変更をトリガーとするなら、Proxyも考慮する。
 let html='<div class="wrap"><div data-xyz="abc"></div></div>'
 let fr=fn.fr(html)
 fn.a2(fr,document.body)
