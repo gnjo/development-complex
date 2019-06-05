@@ -149,7 +149,7 @@ let z=(async (url)=>{
 しかし、その場合ユニーク化が必要である。共通化のままでは、システム全ての鍵となる。
 let flg0=1,flg1=1,flg2=0,flg3=0;//1100
 let dex=bool2dex('1100')
-
+let map="flg0,flg1,flg2,flg3"
 ```
 
 
