@@ -44,4 +44,9 @@ throw new TypeErrorかreturn console.logを使う。
 ```
 要素
 ```
+要素は必ずラッパーを被せる。特にimgのようなafter要素を使用出来ない要素は必ずである。
+.wrap
+ .ed
+.wrap
+ img
 ```
