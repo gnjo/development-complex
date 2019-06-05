@@ -80,5 +80,14 @@ app.draw(allflg)
 2.0 rate 暗く見える。
 2.0 < rate 見えない。 
 ```
+速度計測
+```
+let t0,t1,time
+t0=performance.now()
+....
+t1=performance.now()
+time=t1-t0;
+console.log(time,"[ms]")
+```
 
 
