@@ -50,3 +50,12 @@ throw new TypeErrorかreturn console.logを使う。
 .wrap
  img
 ```
+要素の追加
+```
+htmlを文字列で出力し、そのhtmlに対してフラグメントを作成し、追加する。
+生成した要素に変更を加えたいだろうが、極力文字列で解決する。
+メタプログラミングの方がユーザ操作をブロッキングしないからである。
+let html='<div onclick="xyz(this)"></div>'
+let fr=fn.fr(html)
+fn.a2(fr,document.body)
+```
