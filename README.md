@@ -156,7 +156,7 @@ let map="flg0,flg1,flg2,flg3"
 let mg=magist(data) //mg={short:...,map:...}
  server.save(mg.short)
  local.save(mg.map)
-let _data=magist(data,mg)
+let _data=magist(mg.short,mg.map)
 if(_data===data) console.log('same')
 ```
 
