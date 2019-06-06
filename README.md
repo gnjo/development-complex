@@ -44,10 +44,11 @@ throw new TypeErrorかreturn console.logを使う。
 ```
 要素
 ```
-要素は必ずラッパーを被せる。特にimgのようなafter要素を使用出来ない要素は必ずである。
-.wrap
+要素は必ずframeを被せる。特にimgのようなafter要素を使用出来ない要素は必ずである。
+frameはサイズを規定し、中の要素は基本width:100%;height:100%;である。
+.frame
  .ed
-.wrap
+.frame
  img
 ```
 要素の追加
