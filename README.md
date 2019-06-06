@@ -152,9 +152,12 @@ let dex=bool2dex('1100')
 let map="flg0,flg1,flg2,flg3"
 ```
 
-magist(data,type) // type='map','m','decode','d','de','encode','e','en',or null same the 'e'
 ```
-
+let mg=magist(data) //mg={short:...,map:...}
+ server.save(mg.short)
+ local.save(mg.map)
+let _data=magist(data,mg)
+if(_data===data) console.log('same')
 ```
 
 
