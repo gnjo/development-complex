@@ -140,6 +140,14 @@ let z=(async (url)=>{
  ...
  return data
 })
+
+複雑な計算。
+workerで実装する。
+let w=new Worker(...)
+w.caller=w.onmessage
+w.set=w.postMessage
+w.caller=()=>{...}
+w.set(...)
 ```
 シリアライズ
 ```
