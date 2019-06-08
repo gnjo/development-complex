@@ -72,6 +72,8 @@ app.draw();
 app.draw(allflg)
 ```
 背景色と文字色
+
+https://codepen.io/gnjo/pen/BeXQjQ?checker=1
 ```
 背景色と文字色はコントラスト比で基準を設ける。
 H:16> rate 明る過ぎる。
