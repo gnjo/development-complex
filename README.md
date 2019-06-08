@@ -74,12 +74,12 @@ app.draw(allflg)
 背景色と文字色
 ```
 背景色と文字色はコントラスト比で基準を設ける。
-16> rate 明る過ぎる。
-16 rate 明瞭
-7.0 rate 明瞭
-4.5 rate 判別できる。
-2.0 rate 暗く見える。
-2.0 < rate 見えない。 
+H:16> rate 明る過ぎる。
+AAA:16 rate 明瞭 hover select
+AA:7.0 rate 明瞭 base
+A:4.5 rate 判別できる。 base2
+B:2.0 rate 暗く見える。 wipe border
+D:2.0 < rate 見えない。 
 ```
 速度計測
 ```
